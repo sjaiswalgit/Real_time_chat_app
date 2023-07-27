@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src='/socket.io/socket.io.js'></script>
+    
+    <title>Chat io</title>
+</head>
+<body>
+    <div class="chatbox">
+    <div class="participants">
+    <h2>Participants</h2>
+    </div>
+    <div class="message_box">
+    <h2>Chat IO</h2>
+    <div class="messages">
+    </div>
+        <form id="fm">
+            <input type="text" name ="send" placeholder="Type your message" >
+            <button type="submit" class="material-icons">send</button>
+        </form>
+    </div>
+
+        
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>

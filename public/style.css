@@ -1,0 +1,105 @@
+body{margin:0;
+padding: 0;
+font-family: sans-serif;
+}
+.chatbox{
+    width: 100%;
+    height: 99vh;
+    display:flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.participants{
+    width:320px;
+    height: 100%;
+    border-right: 1px solid rgb(180, 180, 180);
+    border-bottom: 1px solid rgb(180, 180, 180);
+    overflow-y:auto ;
+    padding: 0;
+    background-color: rgb(44, 44, 44);
+}
+.participants h2{
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    margin: 0;
+    height: 50px;
+    line-height: 2;
+    width:100%;
+    position: sticky;
+    top:0;
+}
+
+.participants .member{
+    width: 99%;
+    height:50px;
+    text-align:left;
+    padding-left: 1%;
+    line-height: 2.8;
+    background-color:white;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(185, 185, 185);
+
+}
+.message_box{
+    width:78%;
+    display: flex;
+    flex-direction: column;
+}
+.messages{
+width:100%;
+height: 100%;
+overflow-y: auto;
+}
+.message_box h2{
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    margin: 0;
+    height: 50px;
+    line-height: 2;
+    width:100%;
+}
+.message_box form{
+width:100%;
+height: 4em;
+background-color: rgb(233, 232, 232);
+display: flex;
+flex-direction: row;
+gap:10px;
+align-items: center;
+justify-content: center;
+}
+.message_box form input{
+width:80%;
+height: 50%;
+
+}
+.message-sent{
+    float:right;
+    background-color: rgb(99, 245, 99);
+    clear:both;
+    margin-right: 10px;
+    padding: 5px 15px 5px 5px;
+    border-radius: 5px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 1rem) 8px, calc(100% - 1rem) 100%, 0 100%);
+    -webkit-clip-path:polygon(0 0, 100% 0, calc(100% - 10px) 8px, calc(100% - 10px) 100%, 0 100%);
+    max-width: 40%;
+    margin-top: 8px;
+    
+}
+.message-rec{
+    float:left;
+    background-color: rgb(243, 240, 240);
+    clear:both;
+    margin-left: 10px;
+    padding: 5px 5px 5px 15px ;
+    border-radius: 5px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 12px 8px);
+    -webkit-clip-path:polygon(0 0, 100% 0, 100% 100%, 12px 100%, 12px 8px);
+    max-width: 40%;
+    margin-top: 8px;
+}
+span{font-weight: bold;
+    text-transform: capitalize;
+}
